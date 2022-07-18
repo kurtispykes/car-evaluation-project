@@ -1,0 +1,82 @@
+# Package name
+package_name: car_evaluation_model
+
+# Pipeline name 
+pipeline_name: car_evaluation_model
+pipeline_save_file: car_evaluation_model_output_v
+
+# Data files
+data: car.data
+train_data: train_data.csv
+test_data: test_data.csv 
+
+# Target label 
+target: class
+
+column_names: 
+  - buying
+  - maint
+  - doors 
+  - persons
+  - lug_boot
+  - safety
+  - class
+
+# Model features 
+features: 
+  - buying 
+  - maint
+  - doors
+  - persons
+  - lug_boot
+  - safety
+
+buying: buying
+maint: maint 
+doors: doors 
+persons: persons
+lug_boot: lug_boot
+safety: safety 
+
+buying_and_maint:
+  - buying
+  - maint
+
+buying_and_maint_mappings:
+  vhigh: 3
+  high: 2
+  med: 1
+  low: 0
+
+doors_mappings:
+  2: 0
+  3: 1
+  4: 2
+  5more: 3
+
+persons_mappings: 
+  2: 0
+  4: 1
+  more: 2
+
+lug_boot_mappings: 
+  small: 0
+  med: 1
+  big: 2
+
+safety_mappings:
+  low: 0
+  med: 1
+  high: 2
+
+class_mappings: 
+  unacc: 0
+  acc: 1
+  good: 2
+  vgood: 3
+
+# Model configurations
+random_state: 26
+
+# Data splits
+test_size: 0.25
