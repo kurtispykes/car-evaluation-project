@@ -7,7 +7,6 @@ from car_evaluation_model import __version__ as _version
 from car_evaluation_model.config.core import config
 from car_evaluation_model.processing import data_manager as dm
 from car_evaluation_model.processing.validation import validate_inputs
-from car_evaluation_model.config.core import INTERIM_DATA_DIR
 
 _logger = logging.getLogger(__name__)
 
@@ -20,7 +19,7 @@ def make_prediction(*, inputs):
 
     input_df = pd.DataFrame(inputs)
 
-    validated_data, errors = validate_inputs(inputs=X)
+    validated_data, errors = validate_inputs(inputs=input_df)
     results = {"predictions": None, "version": _version, "errors": errors}
 
     if not errors:
