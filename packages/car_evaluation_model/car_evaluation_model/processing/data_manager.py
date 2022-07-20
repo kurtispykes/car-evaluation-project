@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 from pathlib import Path
-from config.core import INTERIM_DATA_DIR, TRAINED_MODEL_DIR, config
+from car_evaluation_model.config.core import INTERIM_DATA_DIR, TRAINED_MODEL_DIR, config
 from sklearn.model_selection import train_test_split
 
 from car_evaluation_model import __version__ as _version
