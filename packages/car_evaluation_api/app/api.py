@@ -7,6 +7,7 @@ from fastapi import APIRouter, HTTPException
 from fastapi.encoders import jsonable_encoder
 from car_evaluation_model import __version__ as model_version
 from car_evaluation_model.predict import make_prediction
+from loguru import logger
 
 from app import __version__, schemas
 from app.config import settings
