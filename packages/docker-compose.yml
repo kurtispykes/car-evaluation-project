@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  car_evaluation_streamlit:
+    build: 
+        dockerfile: car_evaluation_streamlit\Dockerfile
+    ports:
+      - 8501:8501
+    depends_on:
+      - car_evaluation_api
+
+  car_evaluation_api:
+    build:
+        dockerfile: car_evaluation_api\Dockerfile
+    ports:
+      - 8001:8001
