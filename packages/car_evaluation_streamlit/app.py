@@ -71,7 +71,7 @@ if st.button("Submit"):
         }
         
     # Posting inputs to ML API 
-    response = requests.post(f"http://localhost:8001/api/v1/predict/", json=inputs)
+    response = requests.post(f"http://host.docker.internal:8001/api/v1/predict/", json=inputs, verify=False)
     json_response = response.json()
 
     prediction = class_values[json_response.get("predictions")[0]]
