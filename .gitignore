@@ -89,6 +89,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+packages/car_evaluation_streamlit/venv
 
 # Spyder project settings
 .spyderproject
