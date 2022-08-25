@@ -1,5 +1,4 @@
 import requests
-from collections import OrderedDict
 
 import streamlit as st
 
@@ -34,27 +33,28 @@ persons = st.select_slider(
     options=["2", "4", "more"]
 )
 
+# Input 5
 lug_boot = st.select_slider(
     "What is the size of the luggage boot?",
     options=["small", "med", "big"]
 )
 
+# Input 6
 safety = st.select_slider(
     "What estimated level of safety does the car provide?",
     options=["low", "med", "high"]
 )
 
+# Class values to be returned by the model 
+class_values = {
+    0: "unacceptable", 
+    1: "acceptable", 
+    2: "good", 
+    3: "very good"
+    }
 
 # When 'Submit' is selected
 if st.button("Submit"):
-
-    # Class values to be returned by the model 
-    class_values = {
-        0: "unacceptable", 
-        1: "acceptable", 
-        2: "good", 
-        3: "very good"
-    }
 
     # Inputs to ML model
     inputs = {
