@@ -14,7 +14,12 @@ These instructions assume that you already have Docker and Docker-compose instal
 - Navigate to the root of the project: `cd car-evaluation-project`
 - Build the docker images using `docker-compose up -d --build`
   - This may take a minute
-- Open your browser and navigate to http://localhost:8501 to use the application.   
+- Open your browser and navigate to http://localhost:8501 to use the application. 
+
+## Extending this project 
+- Conduct analysis of the data to build a better classification model
+- Set up monitoring for the machine learning model
+- Deploy on the cloud
 
 ## Articles About this Project 
 - [How to Build a Machine Learning Microservice with FastAPI](https://developer.nvidia.com/blog/building-a-machine-learning-microservice-with-fastapi/)
