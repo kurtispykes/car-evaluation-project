@@ -24,7 +24,7 @@ maint = st.radio(
 # Input 3
 doors = st.select_slider(
     "How many doors does the car have?",
-    options=["2", "3", "5more"]
+    options=["2", "3", "4", "5more"]
 )
 
 # Input 4
