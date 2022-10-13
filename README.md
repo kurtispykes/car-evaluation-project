@@ -23,4 +23,4 @@ These instructions assume that you already have Docker and Docker-compose instal
 
 ## Articles About this Project 
 - [How to Build a Machine Learning Microservice with FastAPI](https://developer.nvidia.com/blog/building-a-machine-learning-microservice-with-fastapi/)
-- How to Build an Instant Machine Learning Web Application with Streamlit and FastAPI (Coming Soon)
+- [How to Build an Instant Machine Learning Web Application with Streamlit and FastAPI](https://developer.nvidia.com/blog/how-to-build-an-instant-machine-learning-web-application-with-streamlit-and-fastapi/)
